@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2025/03/14 00:05:20
+// Create Date: 2025/03/26 23:29:27
 // Design Name: 
-// Module Name: imem
+// Module Name: regfile
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,20 +19,19 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module imem(
-    input [15:0] address,
-    output reg [15:0] instruction
-    );
-    reg [15:0] memory [0:63];
 
-    initial begin
-        // use $readmemh to read the instructions from a file
-        $readmemb("instructions.mem", memory);
-    end
-
+module regfile(
+    input clk,
+    input [3:0] read_reg1, read_reg2, write_reg,
+    input [15:0] write_data,
+    input reg_write,
+    output reg [15:0] read_data1, read_data2
+);
+    reg [15:0] regs [0:15];
     always @(*) begin
-        // read the instruction from the memory, covert the address to word address
-        instruction = memory[address >> 1];
-    end 
+        read_data1 = regs[read_reg1];
+        read_data2 = regs[read_reg2];
+    end
+    always @(posedge clk) if (reg_write) regs[write_reg] <= write_data;
 
 endmodule
