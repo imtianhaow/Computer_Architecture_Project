@@ -24,14 +24,36 @@ module regfile(
     input clk,
     input [3:0] read_reg1, read_reg2, write_reg,
     input [15:0] write_data,
-    input reg_write,
+    input write_enable, // write enable signal from control unit
     output reg [15:0] read_data1, read_data2
-);
-    reg [15:0] regs [0:15];
-    always @(*) begin
-        read_data1 = regs[read_reg1];
-        read_data2 = regs[read_reg2];
+);  
+    // register array, 16 registers of 16 bits each
+    reg [15:0] registers [0:15];
+    // initialize registers to 0
+    integer i;
+    initial begin 
+        for (i = 0; i < 16; i = i + 1) begin
+            registers[i] = 16'b0;
+        end
     end
-    always @(posedge clk) if (reg_write) regs[write_reg] <= write_data;
+
+    // read logic:
+    always @(*) begin
+        read_data1 = registers[read_reg1];
+        read_data2 = registers[read_reg2];
+    end
+    // write logic: - on rising edge of clock
+    always @(posedge clk) begin
+        if (write_enable) begin 
+            if (write_reg != 4'b0) begin
+                registers[write_reg] <= write_data;
+            end
+
+        end
+    end
+    // maintain $0 register as 0
+    always @(*) begin
+        registers[0] = 16'b0; // $r0 should always be 0
+    end
 
 endmodule

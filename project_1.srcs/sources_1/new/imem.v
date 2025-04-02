@@ -31,7 +31,7 @@ module imem(
     end
 
     always @(*) begin
-        // read the instruction from the memory, covert the address to word address
+        // [15:1] is used to select the word index in the memory array
         instruction = memory[address >> 1];
     end 
 
