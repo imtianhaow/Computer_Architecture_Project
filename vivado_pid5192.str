@@ -1,0 +1,151 @@
+/*
+
+AMD Vivado v2024.2 (64-bit) [Major: 2024, Minor: 2]
+SW Build: 5239630 on Fri Nov 08 22:35:27 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+
+Process ID (PID): 5192
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Apr 02 21:20:18 EDT 2025
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 11
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Local screen bounds: x = 0, y = 0, width = 1920, height = 1032
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	21.0.1 64-bit
+
+Java home: 	E:/Application/VIVADO/Vivado/2024.2/tps/win64/jre21.0.1_12
+Java executable: 	E:/Application/VIVADO/Vivado/2024.2/tps/win64/jre21.0.1_12/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:ParallelGCThreads=4, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	fengchen
+User home directory: C:/Users/fengchen
+User working directory: E:/Datum/Computer_Architecture_Project/project_1
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: E:/Application/VIVADO/Vivado
+HDI_APPROOT: E:/Application/VIVADO/Vivado/2024.2
+RDI_DATADIR: E:/Application/VIVADO/Vivado/2024.2/data
+RDI_BINDIR: E:/Application/VIVADO/Vivado/2024.2/bin
+
+Vivado preferences file: C:/Users/fengchen/AppData/Roaming/Xilinx/Vivado/2024.2/vivado.xml
+Vivado preferences directory: C:/Users/fengchen/AppData/Roaming/Xilinx/Vivado/2024.2/
+Vivado layouts directory: C:/Users/fengchen/AppData/Roaming/Xilinx/Vivado/2024.2/data/layouts
+PlanAhead jar file: 	E:/Application/VIVADO/Vivado/2024.2/lib/classes/planAhead.jar
+Vivado log file: 	E:/Datum/Computer_Architecture_Project/project_1/vivado.log
+Vivado journal file: 	E:/Datum/Computer_Architecture_Project/project_1/vivado.jou
+Engine tmp dir: 	E:/Datum/Computer_Architecture_Project/project_1/.Xil/Vivado-5192-DESKTOP-QBI20TU
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+JAVA_HOME: C:\Program Files\Java\jdk-1.8
+RDI_APPROOT: E:/Application/VIVADO/Vivado/2024.2
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent11440 "E:\Datum\Computer_Architecture_Project\project_1\project_1.xpr"
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: E:/Application/VIVADO/Vivado
+RDI_BINDIR: E:/Application/VIVADO/Vivado/2024.2/bin
+RDI_BINROOT: E:/Application/VIVADO/Vivado/2024.2/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: E:/Application/VIVADO/Vivado/2024.2/data
+RDI_INSTALLROOT: E:/Application/VIVADO
+RDI_INSTALLVER: 2024.2
+RDI_INSTALLVERSION: 2024.2
+RDI_ISE_PLATFORM: nt64
+RDI_JAVACEFROOT: E:/Application/VIVADO/Vivado/2024.2/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: E:/Application/VIVADO/Vivado/2024.2/tps/win64/javafx-sdk-21.0.1
+RDI_JAVAROOT: E:/Application/VIVADO/Vivado/2024.2/tps/win64/jre21.0.1_12
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: E:/Application/VIVADO/Vivado/2024.2/lib/win64.o
+RDI_MINGW_LIB: E:/Application/VIVADO/Vivado/2024.2\tps\mingw\6.2.0\win64.o\nt\bin;E:/Application/VIVADO/Vivado/2024.2\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PREPEND_PATH: E:/Application/VIVADO/Vitis/2024.2/bin;E:/Application/VIVADO/Vivado/2024.2/ids_lite/ISE/bin/nt64;E:/Application/VIVADO/Vivado/2024.2/ids_lite/ISE/lib/nt64
+RDI_PROG: E:/Application/VIVADO/Vivado/2024.2/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: E:/Application/VIVADO/Vivado/2024.2\tps\win64\python-3.8.3
+RDI_PYTHON3_VERSION: 3.8.3
+RDI_PYTHONHOME: E:/Application/VIVADO/Vivado/2024.2\tps\win64\python-3.8.3
+RDI_PYTHONPATH: E:/Application/VIVADO/Vivado/2024.2\tps\win64\python-3.8.3;E:/Application/VIVADO/Vivado/2024.2\tps\win64\python-3.8.3\bin;E:/Application/VIVADO/Vivado/2024.2\tps\win64\python-3.8.3\lib;E:/Application/VIVADO/Vivado/2024.2\tps\win64\python-3.8.3\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: E:/Application/VIVADO/Vivado/2024.2\tps\win64\python-3.8.3\lib
+RDI_SESSION_INFO: E:\Datum\Computer_Architecture_Project\project_1:DESKTOP-QBI20TU-2025-04-02周三_21-20-04.56
+RDI_SHARED_DATA: E:/Application/VIVADO/SharedData/2024.2/data
+RDI_TPS_ROOT: E:/Application/VIVADO/Vivado/2024.2/tps/win64
+RDI_USE_JDK21: True
+RDI_VERBOSE: False
+XILINX: E:/Application/VIVADO/Vivado/2024.2/ids_lite/ISE
+XILINX_DSP: E:/Application/VIVADO/Vivado/2024.2/ids_lite/ISE
+XILINX_HLS: E:/Application/VIVADO/Vitis/2024.2
+XILINX_PLANAHEAD: E:/Application/VIVADO/Vivado/2024.2
+XILINX_SDK: E:/Application/VIVADO/Vitis/2024.2
+XILINX_VITIS: E:/Application/VIVADO/Vitis/2024.2
+XILINX_VIVADO: E:/Application/VIVADO/Vivado/2024.2
+_RDI_BINROOT: E:\Application\VIVADO\Vivado\2024.2\bin
+_RDI_CWD: E:\Datum\Computer_Architecture_Project\project_1
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 849 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: E:\Datum\Computer_Architecture_Project\project_1\project_1.xpr. Version: Vivado v2024.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project E:/Datum/Computer_Architecture_Project/project_1/project_1.xpr 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 121 MB (+124701kb) [00:00:08]
+// [Engine Memory]: 755 MB (+640637kb) [00:00:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  1649 ms.
+// Tcl Message: open_project E:/Datum/Computer_Architecture_Project/project_1/project_1.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/Datum/Computer_Architecture_Project/project_1/project_1.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Application/VIVADO/Vivado/2024.2/data/ip'. 
+// [GUI Memory]: 137 MB (+10305kb) [00:00:10]
+// [Engine Memory]: 847 MB (+55931kb) [00:00:10]
+// Project name: project_1; location: E:/Datum/Computer_Architecture_Project/project_1; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bh (Open Project Progress)
