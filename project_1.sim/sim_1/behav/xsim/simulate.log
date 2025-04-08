@@ -6,7 +6,7 @@ Reg_read1: 1
 Reg_read1 or Write_reg: 1
 Read_Data1: 0000
 Read_Data2: 0000
-leds: 0000
+leds show: xxxx
 Sign_extend: 0002
 ALU b selection: 1
 ALU a: 0000
@@ -29,7 +29,7 @@ Reg_read1: 2
 Reg_read1 or Write_reg: 2
 Read_Data1: 0000
 Read_Data2: 0000
-leds: 0000
+leds show: 0000
 Sign_extend: 0004
 ALU b selection: 1
 ALU a: 0000
@@ -52,7 +52,7 @@ Reg_read1: 3
 Reg_read1 or Write_reg: 3
 Read_Data1: 0000
 Read_Data2: 0000
-leds: 0000
+leds show: 0000
 Sign_extend: 0007
 ALU b selection: 1
 ALU a: 0000
@@ -75,7 +75,7 @@ Reg_read1: 1
 Reg_read1 or Write_reg: 2
 Read_Data1: 0002
 Read_Data2: 0004
-leds: 0004
+leds show: 0000
 Sign_extend: 0000
 ALU b selection: 0
 ALU a: 0002
@@ -98,7 +98,7 @@ Reg_read1: 3
 Reg_read1 or Write_reg: 2
 Read_Data1: 0007
 Read_Data2: 0006
-leds: 0004
+leds show: 0004
 Sign_extend: 0001
 ALU b selection: 0
 ALU a: 0007
@@ -121,7 +121,7 @@ Reg_read1: 1
 Reg_read1 or Write_reg: 2
 Read_Data1: 0002
 Read_Data2: 0001
-leds: 0006
+leds show: 0006
 Sign_extend: 0002
 ALU b selection: 0
 ALU a: 0002
@@ -144,7 +144,7 @@ Reg_read1: 2
 Reg_read1 or Write_reg: 3
 Read_Data1: 0004
 Read_Data2: 0007
-leds: 0001
+leds show: 0001
 Sign_extend: 0003
 ALU b selection: 0
 ALU a: 0004
@@ -167,7 +167,7 @@ Reg_read1: 2
 Reg_read1 or Write_reg: 1
 Read_Data1: 0004
 Read_Data2: 0002
-leds: 0004
+leds show: 0007
 Sign_extend: 0001
 ALU b selection: 1
 ALU a: 0004
@@ -190,7 +190,7 @@ Reg_read1: 2
 Reg_read1 or Write_reg: 3
 Read_Data1: 0004
 Read_Data2: 0004
-leds: 0004
+leds show: 0002
 Sign_extend: 0000
 ALU b selection: 1
 ALU a: 0004
@@ -213,7 +213,7 @@ Reg_read1: 3
 Reg_read1 or Write_reg: 1
 Read_Data1: 0002
 Read_Data2: 0002
-leds: 0004
+leds show: 0004
 Sign_extend: 0001
 ALU b selection: 0
 ALU a: 0002
@@ -236,7 +236,7 @@ Reg_read1: 2
 Reg_read1 or Write_reg: 2
 Read_Data1: 0004
 Read_Data2: 0004
-leds: 0004
+leds show: 0002
 Sign_extend: 0006
 ALU b selection: 1
 ALU a: 0004
@@ -244,7 +244,4 @@ ALU b: 0006
 ALU result: 000a
 Write Data: 000a
 Register r0: 0000
-Register r1: 0002
-Register r2: 0004
-Register r3: 0002
-Memory[0]:
+Register 

@@ -156,14 +156,14 @@ module top(
     // hardware for LED display
     reg [15:0] captured_data;
     always @(posedge clk) begin
-        captured_data <= regfile_inst.registers[2];
+        captured_data <= read_data2;
     end
 
     always @(*) begin
         if (clk) begin
             leds = captured_data;
         end else begin
-            leds = regfile_inst.registers[2];
+            leds = read_data2;
         end
     end
 
