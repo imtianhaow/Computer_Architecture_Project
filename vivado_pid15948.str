@@ -5,11 +5,11 @@ SW Build: 5239630 on Fri Nov 08 22:35:27 MST 2024
 IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
 IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
 
-Process ID (PID): 5192
+Process ID (PID): 15948
 License: Customer
 Mode: GUI Mode
 
-Current time: 	Wed Apr 02 21:20:18 EDT 2025
+Current time: 	Mon Apr 07 21:54:02 EDT 2025
 Time zone: 	Eastern Standard Time (America/New_York)
 
 OS: Windows 11
@@ -52,14 +52,14 @@ Vivado layouts directory: C:/Users/fengchen/AppData/Roaming/Xilinx/Vivado/2024.2
 PlanAhead jar file: 	E:/Application/VIVADO/Vivado/2024.2/lib/classes/planAhead.jar
 Vivado log file: 	E:/Datum/Computer_Architecture_Project/project_1/vivado.log
 Vivado journal file: 	E:/Datum/Computer_Architecture_Project/project_1/vivado.jou
-Engine tmp dir: 	E:/Datum/Computer_Architecture_Project/project_1/.Xil/Vivado-5192-DESKTOP-QBI20TU
+Engine tmp dir: 	E:/Datum/Computer_Architecture_Project/project_1/.Xil/Vivado-15948-DESKTOP-QBI20TU
 Non-Default Parameters:	[]
 
 Xilinx & AMD Environment Variables
 --------------------------------------------------------------------------------------------
 JAVA_HOME: C:\Program Files\Java\jdk-1.8
 RDI_APPROOT: E:/Application/VIVADO/Vivado/2024.2
-RDI_ARGS:  -gui_launcher_event rodinguilauncherevent11440 "E:\Datum\Computer_Architecture_Project\project_1\project_1.xpr"
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent10232 "E:\Datum\Computer_Architecture_Project\project_1\project_1.xpr"
 RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
 RDI_BASEROOT: E:/Application/VIVADO/Vivado
 RDI_BINDIR: E:/Application/VIVADO/Vivado/2024.2/bin
@@ -87,7 +87,7 @@ RDI_PYTHON3_VERSION: 3.8.3
 RDI_PYTHONHOME: E:/Application/VIVADO/Vivado/2024.2\tps\win64\python-3.8.3
 RDI_PYTHONPATH: E:/Application/VIVADO/Vivado/2024.2\tps\win64\python-3.8.3;E:/Application/VIVADO/Vivado/2024.2\tps\win64\python-3.8.3\bin;E:/Application/VIVADO/Vivado/2024.2\tps\win64\python-3.8.3\lib;E:/Application/VIVADO/Vivado/2024.2\tps\win64\python-3.8.3\lib\site-packages
 RDI_PYTHON_LD_LIBPATH: E:/Application/VIVADO/Vivado/2024.2\tps\win64\python-3.8.3\lib
-RDI_SESSION_INFO: E:\Datum\Computer_Architecture_Project\project_1:DESKTOP-QBI20TU-2025-04-02周三_21-20-04.56
+RDI_SESSION_INFO: E:\Datum\Computer_Architecture_Project\project_1:DESKTOP-QBI20TU-2025-04-07周一_21-53-31.90
 RDI_SHARED_DATA: E:/Application/VIVADO/SharedData/2024.2/data
 RDI_TPS_ROOT: E:/Application/VIVADO/Vivado/2024.2/tps/win64
 RDI_USE_JDK21: True
@@ -105,7 +105,7 @@ _RDI_CWD: E:\Datum\Computer_Architecture_Project\project_1
 
 GUI allocated memory:	512 MB
 GUI max memory:		4,072 MB
-Engine allocated memory: 849 MB
+Engine allocated memory: 830 MB
 
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
@@ -136,16 +136,22 @@ Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // TclEventType: PROJECT_DASHBOARD_GADGET_NEW
 // TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
 // TclEventType: PROJECT_NEW
-// Tcl Message: open_project E:/Datum/Computer_Architecture_Project/project_1/project_1.xpr 
-// TclEventType: PROJECT_NEW
-// [GUI Memory]: 121 MB (+124701kb) [00:00:08]
-// [Engine Memory]: 755 MB (+640637kb) [00:00:08]
-// WARNING: HEventQueue.dispatchEvent() is taking  1649 ms.
+// [GUI Memory]: 119 MB (+121831kb) [00:00:12]
+// [Engine Memory]: 757 MB (+642779kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  1573 ms.
 // Tcl Message: open_project E:/Datum/Computer_Architecture_Project/project_1/project_1.xpr 
 // Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/Datum/Computer_Architecture_Project/project_1/project_1.gen/sources_1'. 
 // Tcl Message: Scanning sources... Finished scanning sources 
 // Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Application/VIVADO/Vivado/2024.2/data/ip'. 
-// [GUI Memory]: 137 MB (+10305kb) [00:00:10]
-// [Engine Memory]: 847 MB (+55931kb) [00:00:10]
+// [GUI Memory]: 143 MB (+18960kb) [00:00:13]
 // Project name: project_1; location: E:/Datum/Computer_Architecture_Project/project_1; part: xc7a35tcpg236-1
 dismissDialog("Open Project"); // bh (Open Project Progress)
+// [Engine Memory]: 830 MB (+36426kb) [00:00:14]
+// HMemoryUtils.trashcanNow. Engine heap size: 830 MB. GUI used memory: 71 MB. Current time: 4/7/25, 9:54:03 PM EDT
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 4, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 4); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed time: 39 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_tb (top_tb.v)]", 5, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_tb (top_tb.v)]", 5, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Launch External Editor: 'D:/MyApplication/VsCode/Microsoft VS Code/Code.exe -g "E:/Datum/Computer_Architecture_Project/project_1/project_1.srcs/sim_1/new/top_tb.v":108'

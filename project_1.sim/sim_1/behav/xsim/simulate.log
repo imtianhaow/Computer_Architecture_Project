@@ -6,6 +6,7 @@ Reg_read1: 1
 Reg_read1 or Write_reg: 1
 Read_Data1: 0000
 Read_Data2: 0000
+leds: 0000
 Sign_extend: 0002
 ALU b selection: 1
 ALU a: 0000
@@ -28,6 +29,7 @@ Reg_read1: 2
 Reg_read1 or Write_reg: 2
 Read_Data1: 0000
 Read_Data2: 0000
+leds: 0000
 Sign_extend: 0004
 ALU b selection: 1
 ALU a: 0000
@@ -50,6 +52,7 @@ Reg_read1: 3
 Reg_read1 or Write_reg: 3
 Read_Data1: 0000
 Read_Data2: 0000
+leds: 0000
 Sign_extend: 0007
 ALU b selection: 1
 ALU a: 0000
@@ -72,6 +75,7 @@ Reg_read1: 1
 Reg_read1 or Write_reg: 2
 Read_Data1: 0002
 Read_Data2: 0004
+leds: 0004
 Sign_extend: 0000
 ALU b selection: 0
 ALU a: 0002
@@ -94,6 +98,7 @@ Reg_read1: 3
 Reg_read1 or Write_reg: 2
 Read_Data1: 0007
 Read_Data2: 0006
+leds: 0004
 Sign_extend: 0001
 ALU b selection: 0
 ALU a: 0007
@@ -116,6 +121,7 @@ Reg_read1: 1
 Reg_read1 or Write_reg: 2
 Read_Data1: 0002
 Read_Data2: 0001
+leds: 0006
 Sign_extend: 0002
 ALU b selection: 0
 ALU a: 0002
@@ -138,6 +144,7 @@ Reg_read1: 2
 Reg_read1 or Write_reg: 3
 Read_Data1: 0004
 Read_Data2: 0007
+leds: 0001
 Sign_extend: 0003
 ALU b selection: 0
 ALU a: 0004
@@ -160,6 +167,7 @@ Reg_read1: 2
 Reg_read1 or Write_reg: 1
 Read_Data1: 0004
 Read_Data2: 0002
+leds: 0004
 Sign_extend: 0001
 ALU b selection: 1
 ALU a: 0004
@@ -182,6 +190,7 @@ Reg_read1: 2
 Reg_read1 or Write_reg: 3
 Read_Data1: 0004
 Read_Data2: 0004
+leds: 0004
 Sign_extend: 0000
 ALU b selection: 1
 ALU a: 0004
@@ -204,6 +213,7 @@ Reg_read1: 3
 Reg_read1 or Write_reg: 1
 Read_Data1: 0002
 Read_Data2: 0002
+leds: 0004
 Sign_extend: 0001
 ALU b selection: 0
 ALU a: 0002
@@ -226,6 +236,7 @@ Reg_read1: 2
 Reg_read1 or Write_reg: 2
 Read_Data1: 0004
 Read_Data2: 0004
+leds: 0004
 Sign_extend: 0006
 ALU b selection: 1
 ALU a: 0004
@@ -236,119 +247,4 @@ Register r0: 0000
 Register r1: 0002
 Register r2: 0004
 Register r3: 0002
-Memory[0]: 0000
-Memory[1]: 0000
-Memory[2]: 0002
-Memory[3]: 0000
-----------------------
-Time: 120000
-PC: 0018
-Instruction: 5121
-Reg_read1: 2
-Reg_read1 or Write_reg: 1
-Read_Data1: 000a
-Read_Data2: 0002
-Sign_extend: 0001
-ALU b selection: 0
-ALU a: 000a
-ALU b: 0002
-ALU result: 0008
-Write Data: 0008
-Register r0: 0000
-Register r1: 0002
-Register r2: 000a
-Register r3: 0002
-Memory[0]: 0000
-Memory[1]: 0000
-Memory[2]: 0002
-Memory[3]: 0000
-----------------------
-Time: 130000
-PC: 001c
-Instruction: 3226
-Reg_read1: 2
-Reg_read1 or Write_reg: 2
-Read_Data1: 000a
-Read_Data2: 000a
-Sign_extend: 0006
-ALU b selection: 1
-ALU a: 000a
-ALU b: 0006
-ALU result: 0010
-Write Data: 0010
-Register r0: 0000
-Register r1: 0002
-Register r2: 000a
-Register r3: 0002
-Memory[0]: 0000
-Memory[1]: 0000
-Memory[2]: 0002
-Memory[3]: 0000
-----------------------
-Time: 140000
-PC: 001e
-Instruction: 6001
-Reg_read1: 0
-Reg_read1 or Write_reg: 0
-Read_Data1: 0000
-Read_Data2: 0000
-Sign_extend: 0001
-ALU b selection: 0
-ALU a: 0000
-ALU b: 0000
-ALU result: 0000
-Write Data: 0000
-Register r0: 0000
-Register r1: 0002
-Register r2: 0010
-Register r3: 0002
-Memory[0]: 0000
-Memory[1]: 0000
-Memory[2]: 0002
-Memory[3]: 0000
-----------------------
-Time: 150000
-PC: 0022
-Instruction: 3226
-Reg_read1: 2
-Reg_read1 or Write_reg: 2
-Read_Data1: 0010
-Read_Data2: 0010
-Sign_extend: 0006
-ALU b selection: 1
-ALU a: 0010
-ALU b: 0006
-ALU result: 0016
-Write Data: 0016
-Register r0: 0000
-Register r1: 0002
-Register r2: 0010
-Register r3: 0002
-Memory[0]: 0000
-Memory[1]: 0000
-Memory[2]: 0002
-Memory[3]: 0000
-----------------------
-Time: 160000
-PC: 0024
-Instruction: xxxx
-Reg_read1: x
-Reg_read1 or Write_reg: x
-Read_Data1: xxxx
-Read_Data2: xxxx
-Sign_extend: xxxx
-ALU b selection: 0
-ALU a: xxxx
-ALU b: xxxx
-ALU result: xxxx
-Write Data: xxxx
-Register r0: 0000
-Register r1: 0002
-Register r2: 0016
-Register r3: 0002
-Memory[0]: 0000
-Memory[1]: 0000
-Memory[2]: 0002
-Memory[3]: 0000
-----------------------
-$finish called at time : 170 ns : File "E:/Datum/Computer_Architecture_Project/project_1/project_1.srcs/sim_1/new/top_tb.v" Line 52
+Memory[0]:

@@ -23,7 +23,7 @@
 module top(
     input clk,
     input rst,
-    output [15:0] read_data2
+    output reg [15:0] leds
     );
 
     // difine intermeidiate wires
@@ -36,7 +36,7 @@ module top(
     wire [1:0] ALUOp;
     
     // register File
-    wire[15:0] read_data1, write_data;
+    wire[15:0] read_data1, read_data2, write_data;
 
     // sign extend & shift left
     wire [15:0] sign_extended_imm, shifted_imm;
@@ -153,6 +153,18 @@ module top(
         .out(next_pc)
     );
     
-    
+    // hardware for LED display
+    reg [15:0] captured_data;
+    always @(posedge clk) begin
+        captured_data <= regfile_inst.registers[2];
+    end
+
+    always @(*) begin
+        if (clk) begin
+            leds = captured_data;
+        end else begin
+            leds = regfile_inst.registers[2];
+        end
+    end
 
 endmodule

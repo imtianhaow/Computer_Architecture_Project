@@ -52,8 +52,8 @@ module regfile(
         end
     end
     // maintain $0 register as 0
-    always @(*) begin
-        registers[0] = 16'b0; // $r0 should always be 0
-    end
+    // always @(*) begin
+    //     registers[0] = 16'b0; // $r0 should always be 0
+    // end
 
 endmodule
