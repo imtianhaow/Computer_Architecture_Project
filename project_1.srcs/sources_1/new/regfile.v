@@ -42,8 +42,8 @@ module regfile(
         read_data1 = registers[read_reg1];
         read_data2 = registers[read_reg2];
     end
-    // write logic: - on rising edge of clock
-    always @(posedge clk) begin
+    // write logic: - on falling edge of clock
+    always @(negedge clk) begin
         if (write_enable) begin 
             if (write_reg != 4'b0) begin
                 registers[write_reg] <= write_data;
