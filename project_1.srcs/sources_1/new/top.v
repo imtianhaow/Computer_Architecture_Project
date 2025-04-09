@@ -23,7 +23,7 @@
 module top(
     input clk,
     input rst,
-    output reg [15:0] leds
+    output [15:0] read_data2
     );
 
     // difine intermeidiate wires
@@ -36,7 +36,7 @@ module top(
     wire [1:0] ALUOp;
     
     // register File
-    wire[15:0] read_data1, read_data2, write_data;
+    wire[15:0] read_data1 , write_data;
 
     // sign extend & shift left
     wire [15:0] sign_extended_imm, shifted_imm;
@@ -89,6 +89,12 @@ module top(
 
     // ALU
     wire [15:0] alu_b = ALUSrc ? sign_extended_imm : read_data2;
+    // mux_2x1 mux_alu_b(
+    //     .in0(read_data2),
+    //     .in1(sign_extended_imm),
+    //     .sel(ALUSrc),
+    //     .out(alu_b)
+    // );
 
     alu alu_inst(
         .a(read_data1),
@@ -146,20 +152,5 @@ module top(
         .sel(Jump),
         .out(next_pc)
     );
-    
-    // hardware for LED display
-    reg [15:0] captured_data;
-    always @(posedge clk) begin
-        captured_data <= read_data2;
-    end
-
-    always @(negedge clk) begin
-        leds <= read_data2;
-    end
-
-
-    always @(*) begin
-        leds = captured_data;
-    end
 
 endmodule
