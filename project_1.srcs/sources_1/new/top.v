@@ -89,12 +89,6 @@ module top(
 
     // ALU
     wire [15:0] alu_b = ALUSrc ? sign_extended_imm : read_data2;
-    // mux_2x1 mux_alu_b(
-    //     .in0(read_data2),
-    //     .in1(sign_extended_imm),
-    //     .sel(ALUSrc),
-    //     .out(alu_b)
-    // );
 
     alu alu_inst(
         .a(read_data1),
@@ -159,12 +153,13 @@ module top(
         captured_data <= read_data2;
     end
 
+    always @(negedge clk) begin
+        leds <= read_data2;
+    end
+
+
     always @(*) begin
-        if (clk) begin
-            leds = captured_data;
-        end else begin
-            leds = read_data2;
-        end
+        leds = captured_data;
     end
 
 endmodule
