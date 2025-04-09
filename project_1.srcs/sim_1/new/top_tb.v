@@ -29,7 +29,7 @@ module top_tb;
     top uut (
         .clk(clk),
         .rst(reset),
-        .leds(leds)
+        .read_data2(leds)
     );
 
     // Clock generation: 10-unit period
@@ -62,7 +62,6 @@ module top_tb;
             $display("Reg_read1 or Write_reg: %h", uut.instruction[11:8]);
             $display("Read_Data1: %h", uut.read_data1);
             $display("Read_Data2: %h", uut.read_data2);
-            $display("leds show: %h", uut.leds);
 
             $display("Sign_extend: %h", uut.sign_extended_imm);
             $display("ALU b selection: %b", uut.ALUSrc);
