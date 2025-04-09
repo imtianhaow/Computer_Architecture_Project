@@ -50,8 +50,8 @@ module dmem(
         end
     end
 
-    // write logic
-    always @(posedge clk) begin
+    // write logic of falling edge
+    always @(negedge clk) begin
         if(mem_write) begin
             memory[addr[15:1]] <= write_data;
         end
